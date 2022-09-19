@@ -84,6 +84,7 @@ variable "lambda_runtime" {
 }
 
 variable "lambda_tags" {
+  type        = map(string)
   description = "A mapping of tags to assign to Lambda Function."
   default     = {}
 }
